@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		D5D20D552AAE07DB00EE383B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D20D542AAE07DB00EE383B /* AppDelegate.swift */; };
 		D5D20D572AAE07DB00EE383B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D20D562AAE07DB00EE383B /* SceneDelegate.swift */; };
-		D5D20D592AAE07DB00EE383B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D20D582AAE07DB00EE383B /* ViewController.swift */; };
 		D5D20D5C2AAE07DB00EE383B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5D20D5A2AAE07DB00EE383B /* Main.storyboard */; };
 		D5D20D5E2AAE07E000EE383B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5D20D5D2AAE07E000EE383B /* Assets.xcassets */; };
 		D5D20D612AAE07E000EE383B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5D20D5F2AAE07E000EE383B /* LaunchScreen.storyboard */; };
+		D5D20D6E2AAE088D00EE383B /* SWCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D20D6D2AAE088D00EE383B /* SWCharacter.swift */; };
+		D5D20D712AAE0F8A00EE383B /* UserActionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D20D702AAE0F8A00EE383B /* UserActionCell.swift */; };
+		D5D20D732AAE11FC00EE383B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D20D722AAE11FC00EE383B /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D5D20D512AAE07DB00EE383B /* StarWarsWiki.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarWarsWiki.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5D20D542AAE07DB00EE383B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D5D20D562AAE07DB00EE383B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D5D20D582AAE07DB00EE383B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D5D20D5B2AAE07DB00EE383B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D5D20D5D2AAE07E000EE383B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D5D20D602AAE07E000EE383B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D5D20D622AAE07E000EE383B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D5D20D6D2AAE088D00EE383B /* SWCharacter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWCharacter.swift; sourceTree = "<group>"; };
+		D5D20D702AAE0F8A00EE383B /* UserActionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserActionCell.swift; sourceTree = "<group>"; };
+		D5D20D722AAE11FC00EE383B /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,73 @@
 		D5D20D532AAE07DB00EE383B /* StarWarsWiki */ = {
 			isa = PBXGroup;
 			children = (
-				D5D20D542AAE07DB00EE383B /* AppDelegate.swift */,
-				D5D20D562AAE07DB00EE383B /* SceneDelegate.swift */,
-				D5D20D582AAE07DB00EE383B /* ViewController.swift */,
-				D5D20D5A2AAE07DB00EE383B /* Main.storyboard */,
-				D5D20D5D2AAE07E000EE383B /* Assets.xcassets */,
-				D5D20D5F2AAE07E000EE383B /* LaunchScreen.storyboard */,
-				D5D20D622AAE07E000EE383B /* Info.plist */,
+				D5D20D692AAE07F600EE383B /* ViewControllers */,
+				D5D20D6F2AAE0F5C00EE383B /* Views */,
+				D5D20D682AAE07EF00EE383B /* Models */,
+				D5D20D6A2AAE081600EE383B /* Services */,
+				D5D20D6C2AAE082E00EE383B /* StoryBoards */,
+				D5D20D6B2AAE081F00EE383B /* App */,
+				D5D20D742AAE37CE00EE383B /* Resources */,
 			);
 			path = StarWarsWiki;
+			sourceTree = "<group>";
+		};
+		D5D20D682AAE07EF00EE383B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D5D20D6D2AAE088D00EE383B /* SWCharacter.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D5D20D692AAE07F600EE383B /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D5D20D722AAE11FC00EE383B /* MainViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		D5D20D6A2AAE081600EE383B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		D5D20D6B2AAE081F00EE383B /* App */ = {
+			isa = PBXGroup;
+			children = (
+				D5D20D542AAE07DB00EE383B /* AppDelegate.swift */,
+				D5D20D562AAE07DB00EE383B /* SceneDelegate.swift */,
+				D5D20D622AAE07E000EE383B /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		D5D20D6C2AAE082E00EE383B /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				D5D20D5A2AAE07DB00EE383B /* Main.storyboard */,
+				D5D20D5F2AAE07E000EE383B /* LaunchScreen.storyboard */,
+			);
+			path = StoryBoards;
+			sourceTree = "<group>";
+		};
+		D5D20D6F2AAE0F5C00EE383B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D5D20D702AAE0F8A00EE383B /* UserActionCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D5D20D742AAE37CE00EE383B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D5D20D5D2AAE07E000EE383B /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +200,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D5D20D592AAE07DB00EE383B /* ViewController.swift in Sources */,
+				D5D20D712AAE0F8A00EE383B /* UserActionCell.swift in Sources */,
 				D5D20D552AAE07DB00EE383B /* AppDelegate.swift in Sources */,
+				D5D20D732AAE11FC00EE383B /* MainViewController.swift in Sources */,
 				D5D20D572AAE07DB00EE383B /* SceneDelegate.swift in Sources */,
+				D5D20D6E2AAE088D00EE383B /* SWCharacter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,7 +353,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = ZTCXV22DZB;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = StarWarsWiki/Info.plist;
+				INFOPLIST_FILE = StarWarsWiki/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -317,7 +381,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = ZTCXV22DZB;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = StarWarsWiki/Info.plist;
+				INFOPLIST_FILE = StarWarsWiki/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
